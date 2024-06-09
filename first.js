@@ -4,3 +4,18 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   }
+ 
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var overlay = document.querySelector(".overlay");
+    var loader = document.querySelector(".loader");
+
+    function removeOverlay() {
+        overlay.parentNode.removeChild(overlay);
+    }
+
+    
+    setTimeout(removeOverlay, 3000); 
+});
+
+  
